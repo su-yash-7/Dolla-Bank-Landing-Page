@@ -10,13 +10,13 @@ import {
   NavBtnLink,
 } from './NavbarElements';
 import { FaBars } from 'react-icons/fa';
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
           <Navlogo to="/">dolla</Navlogo>
-          <MobileIcons>
+          <MobileIcons onClick={toggle}>
             <FaBars />
           </MobileIcons>
           <NavMenu>
