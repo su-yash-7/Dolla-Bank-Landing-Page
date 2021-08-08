@@ -1,9 +1,10 @@
 import React from 'react';
+import SignIn from '../components/SignIn/indev';
 
 const SignInPage = () => {
   return (
     <div>
-      <h1>SignIn</h1>
+      <SignIn />
     </div>
   );
 };
