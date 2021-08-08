@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
 export const Nav = styled.nav`
-  background: #000;
+  background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -64,7 +64,7 @@ export const NavMenu = styled.ul`
 export const NavItems = styled.li`
   height: 80px;
 `;
-export const NavLink = styled(LinkS)`
+export const NavLinks = styled(LinkS)`
   color: #fff;
   display: flex;
   align-items: center;
